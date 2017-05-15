@@ -1,0 +1,1 @@
+$ðX<?php exit; ?>a:1:{s:7:"content";s:52:"Â© Copyright 2017 Gifgift Card. All Rights Reserved.";}

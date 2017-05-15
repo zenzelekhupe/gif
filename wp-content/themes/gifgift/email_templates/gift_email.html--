@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gift Email</title>
+</head>
+<body style="text-align: left; font-family: arial; margin: 0; max-width: 800px; width: 90%; margin: auto; ">
+<!-- <h1 style="text-transform: uppercase;  color: #AC015C; font-weight: bold;">GIFT EMAIL</h1> -->
+<a href="http://www.gifgiftcard.com/" target="_blank"><img style="max-width: 180px; width: 100%;" src="http://www.gifgiftcard.com/wp-content/uploads/2017/03/logo-gif.png"></a>
+<p style="color: #2CACAD; font-weight: bold; font-size: 20px; letter-spacing: 1px;">Welcome to GifGiftCard, the happiest way to send a gift card :) </p>
+<p><strong>We created an account for you: </strong></p>
+<p><label><strong>First Name : </strong></label>{{urname}}</p>
+
+<label><strong>Gift Card :</strong></label><p><img src="{{card}}" style ="max-width: 500px; margin: auto;"></p>
+<label><strong>Gift Images :</strong></label><p><img src="{{gif1}}" style ="max-width: 500px; margin: auto;"><img src="{{gif2}}" style ="max-width: 500px; margin: auto;"></p>
+
+<p><label><strong>Amount : </strong></label>${{amount}}</p>
+<p><label><strong>Sender Message : </strong></label>{{rmessage}}</p>
+
+
+<p stle="color: #2E3338;">Footer- GifGiftCard- the happiest way to send a gift card </p>
+
+<br/>
+<p><strong>Cheers,</strong><br/> The Gif Gift Card Team </p>
+<p><em><a href="http://www.gifgiftcard.com/" target="_blank" style="text-decoration: none; font-size: 15px; color: #63AC1F;">Check out GifGiftCard to send a gift card or add reminders for the most important dates in your friends' and families' lives. Never forget a date again.  </em></a></p>
+<p style="background-color:#2E3338; color: #fff; padding: 10px 0; font-size: 12px; text-align: center;">GifGiftCard- The Happiest Way to Send a Gift Card :) </p>
+
+</body>
+</html>

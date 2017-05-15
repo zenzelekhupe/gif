@@ -1,0 +1,44 @@
+<?php include('paynow.php') ?>
+
+<!doctype html>
+<html>
+
+<body>
+    <div style='background-color: #eee';>
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                        <td class="title">
+                             <a href="http://www.gifgiftcard.com"><img src="http://35.154.123.8/gif/wp-content/uploads/2017/03/logo-gif.png" style="width:100%; max-width:300px;"></a>
+                        </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="information">
+                <td colspan="2">
+                    <table>
+                        <tr>                     
+                            <td>
+                            <!-- Invoice #: 123<br> -->
+                                <h2>{{rname}}</h2><br>
+                               <img src="{{card}}">   
+                                {{amount}}                              
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>            
+        </table>
+         <tr>
+        Cheers! </br>
+        The Gif Gift Card team</br>
+        </tr>
+        <div style='background-color: #2e3338; color:#ffffff';>
+               Don't forget to add reminders for the most important dates in your friends' and families' lives. Never forget a date again.
+            </div>
+    </div>
+</body>
+</html>

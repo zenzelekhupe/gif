@@ -1,0 +1,68 @@
+<?php /* Template Name: Stripe Payment Gateway */ ?>
+<?php get_header(); ?>
+<div class="main-inner-page">
+<div class="container">
+<div class="inner-pages-inner">
+<div class="send-to-stripes diff">
+<h1><span>Sender Details</span></h1>
+<?php $wp_session = WP_Session::get_instance();
+if ($wp_session['gift_data']['amount']) { ?>
+
+<input type="text" name="" placeholder="Who are you sending it to ?">
+<input type="text" name="" placeholder="Your Name">
+<input type="text" name="" placeholder="e-mail">
+<input type="text" name="" placeholder="Who are you sending it to ?">
+<input type="text" name="" placeholder="Name">
+<input type="text" name="" placeholder="e-mail">
+<textarea placeholder="Add a message ?"></textarea></p>
+
+<?php $amount = $wp_session['gift_data']['amount']*100;
+$name = 'Gif Gift Card';
+$description = "Send Gift to your loved one's";
+$label = "Proceed";
+?>
+<?php echo do_shortcode('[direct-stripe type="payment" amount="'.$amount.'" name="'.$name.'" description="'.$description.'" label="'.$label.'" panellabel="Pay now"]');?>
+<!--  <script>
+var handler = StripeCheckout.configure({
+  key: 'pk_test_6pRNASCoBOKtIshFeQd4XMUh',
+  image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+  locale: 'auto',
+  email : 'info@360coder.com',
+  token: function(token) {
+    // You can access the token ID with `token.id`.
+    // Get the token ID to your server-side code for use.
+  }
+});
+
+document.getElementById('customButton').addEventListener('click', function(e) {
+  // Open Checkout with further options:
+  handler.open({
+    name: 'Stripe.com',
+    description: '2 widgets',
+    zipCode: true,
+    amount: 2000
+  });
+  e.preventDefault();
+});
+
+// Close Checkout on page navigation:
+window.addEventListener('popstate', function() {
+  handler.close();
+});
+</script> -->
+	
+<?php }else{
+	echo "Session Expired";
+	}
+if ($_POST) {
+	die();
+}
+ ?>
+
+
+
+</div>
+</div>
+</div>
+</div>
+<?php get_footer(); ?>

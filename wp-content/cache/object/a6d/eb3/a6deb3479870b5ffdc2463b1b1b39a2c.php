@@ -1,0 +1,1 @@
+ğX<?php exit; ?>a:1:{s:7:"content";s:63:"http://www.gifgiftcard.com/wp-includes/images/media/default.png";}
